@@ -32,6 +32,7 @@ body {
   align-items: center;
   justify-content: center;
   cursor: pointer;
+  padding: 1%;
 }
 
 .item-menu {
@@ -98,7 +99,8 @@ body {
 .i1:hover .i1-m p,
 .i2:hover .i2-m p,
 .i3:hover .i3-m p,
-.i4:hover .i4-m p {
+.i4:hover .i4-m p,
+.i5:hover .i5-m p {
   transform: rotate(45deg);
 }
 
@@ -106,17 +108,20 @@ body {
 #i2-btn:checked ~ .ic-2 img,
 #i3-btn:checked ~ .ic-3 img,
 #i4-btn:checked ~ .ic-4 img,
+#i5-btn:checked ~ .ic-5 img,
 .i1:hover .i1-con img,
 .i2:hover .i2-con img,
 .i3:hover .i3-con img,
-.i4:hover .i4-con img {
+.i4:hover .i4-con img,
+.i5:hover .i5-con img {
   height: 20rem;
 }
 
 #i1-btn:checked ~ .ic-1 p,
 #i2-btn:checked ~ .ic-2 p,
 #i3-btn:checked ~ .ic-3 p,
-#i4-btn:checked ~ .ic-4 p {
+#i4-btn:checked ~ .ic-4 p,
+#i5-btn:checked ~ .ic-5 p {
   transform: rotate(45deg);
   color: #eaeaea;
 }
@@ -124,7 +129,8 @@ body {
 #i1-btn:checked ~ .ic-1 span,
 #i2-btn:checked ~ .ic-2 span,
 #i3-btn:checked ~ .ic-3 span,
-#i4-btn:checked ~ .ic-4 span {
+#i4-btn:checked ~ .ic-4 span,
+#i5-btn:checked ~ .ic-5 span {
   color: #eaeaea;
 }
 
@@ -133,10 +139,12 @@ body {
   #i2-btn:checked ~ .ic-2 img,
   #i3-btn:checked ~ .ic-3 img,
   #i4-btn:checked ~ .ic-4 img,
+  #i5-btn:checked ~ .ic-5 img,
   .i1:hover .i1-con img,
   .i2:hover .i2-con img,
   .i3:hover .i3-con img,
-  .i4:hover .i4-con img {
+  .i4:hover .i4-con img,
+  .i5:hover .i5-con img {
     height: 12rem;
   }
 
@@ -162,10 +170,12 @@ body {
   #i2-btn:checked ~ .ic-2 img,
   #i3-btn:checked ~ .ic-3 img,
   #i4-btn:checked ~ .ic-4 img,
+  #i5-btn:checked ~ .ic-5 img,
   .i1:hover .i1-con img,
   .i2:hover .i2-con img,
   .i3:hover .i3-con img,
-  .i4:hover .i4-con img {
+  .i4:hover .i4-con img,
+  .i5:hover .i5-con img {
     height: 10rem;
   }
 

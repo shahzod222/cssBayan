@@ -80,6 +80,7 @@ body {
   font-family: "Tilt Neon", cursive;
   transition: 0.8s ease-in-out;
   cursor: pointer;
+  display: none;
 }
 
 .item-menu span {
@@ -94,6 +95,18 @@ body {
 
 .item-cover {
   width: 100%;
+}
+
+.items {
+  width: 100%;
+}
+
+.items:hover .btn {
+  display: block;
+}
+
+.items:hover .item-menu span {
+  color: #eaeaea;
 }
 
 .i1:hover .i1-m p,

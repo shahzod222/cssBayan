@@ -1,0 +1,198 @@
+@import url("https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #eaeaea;
+  width: 100%;
+  height: 100%;
+}
+
+.container {
+  width: 60%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.item {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  padding: 1%;
+}
+
+.item-menu {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 4rem;
+  background-color: #ff2e63;
+  border-radius: 1.5rem;
+  padding: 1rem 3rem;
+  margin: 0.5rem 0;
+}
+
+.item-content {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.meme-img {
+  width: 70%;
+  transition: all 0.5s ease-in-out;
+  height: 0;
+}
+
+.white-space-remover {
+  width: 100%;
+  min-height: 25%;
+}
+
+.btn-cover {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn {
+  background: none;
+  border: none;
+  outline: none;
+  font-size: 2rem;
+  color: #252a34;
+  font-family: "Tilt Neon", cursive;
+  transition: 0.8s ease-in-out;
+  cursor: pointer;
+  display: none;
+}
+
+.item-menu span {
+  font-size: 1.2rem;
+  color: #252a34;
+  font-family: "Tilt Neon", cursive;
+}
+
+.buttons {
+  display: none;
+}
+
+.item-cover {
+  width: 100%;
+}
+
+.items {
+  width: 100%;
+}
+
+.items:hover .btn {
+  display: block;
+}
+
+.items:hover .item-menu span {
+  color: #eaeaea;
+}
+
+.i1:hover .i1-m p,
+.i2:hover .i2-m p,
+.i3:hover .i3-m p,
+.i4:hover .i4-m p,
+.i5:hover .i5-m p {
+  transform: rotate(45deg);
+}
+
+#i1-btn:checked ~ .ic-1 img,
+#i2-btn:checked ~ .ic-2 img,
+#i3-btn:checked ~ .ic-3 img,
+#i4-btn:checked ~ .ic-4 img,
+#i5-btn:checked ~ .ic-5 img,
+.i1:hover .i1-con img,
+.i2:hover .i2-con img,
+.i3:hover .i3-con img,
+.i4:hover .i4-con img,
+.i5:hover .i5-con img {
+  height: 20rem;
+}
+
+#i1-btn:checked ~ .ic-1 p,
+#i2-btn:checked ~ .ic-2 p,
+#i3-btn:checked ~ .ic-3 p,
+#i4-btn:checked ~ .ic-4 p,
+#i5-btn:checked ~ .ic-5 p {
+  transform: rotate(45deg);
+  color: #eaeaea;
+}
+
+#i1-btn:checked ~ .ic-1 span,
+#i2-btn:checked ~ .ic-2 span,
+#i3-btn:checked ~ .ic-3 span,
+#i4-btn:checked ~ .ic-4 span,
+#i5-btn:checked ~ .ic-5 span {
+  color: #eaeaea;
+}
+
+@media (max-width: 820px) {
+  #i1-btn:checked ~ .ic-1 img,
+  #i2-btn:checked ~ .ic-2 img,
+  #i3-btn:checked ~ .ic-3 img,
+  #i4-btn:checked ~ .ic-4 img,
+  #i5-btn:checked ~ .ic-5 img,
+  .i1:hover .i1-con img,
+  .i2:hover .i2-con img,
+  .i3:hover .i3-con img,
+  .i4:hover .i4-con img,
+  .i5:hover .i5-con img {
+    height: 12rem;
+  }
+
+  .item-menu span {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 320px) {
+  .container {
+    width: 90%;
+  }
+
+  .item-menu span {
+    font-size: 0.8rem;
+  }
+
+  .meme-img {
+    width: 100%;
+  }
+
+  #i1-btn:checked ~ .ic-1 img,
+  #i2-btn:checked ~ .ic-2 img,
+  #i3-btn:checked ~ .ic-3 img,
+  #i4-btn:checked ~ .ic-4 img,
+  #i5-btn:checked ~ .ic-5 img,
+  .i1:hover .i1-con img,
+  .i2:hover .i2-con img,
+  .i3:hover .i3-con img,
+  .i4:hover .i4-con img,
+  .i5:hover .i5-con img {
+    height: 10rem;
+  }
+
+  .btn {
+    font-size: 1.5rem;
+  }
+}
